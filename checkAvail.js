@@ -5,7 +5,7 @@ function checkAvail() {
 
     if (gid == "group ID") {
         // set "pls enter value" message visible
-        document.getElementById.display = "block";
+        document.getElementById("EnterValueError").display = "block";
     }
 
 
