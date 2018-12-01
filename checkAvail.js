@@ -15,7 +15,7 @@ function checkAvail() {
 function checkPython() {
     var jqXHR = $.ajax({
         type: "POST",
-        url: "/test",
+        url: "/app.py/test",
         async: false,
         data: { mydata: 0}
     });
