@@ -15,13 +15,15 @@ function checkAvail() {
 function checkPython() {
     var jqXHR = $.ajax({
         type: "POST",
-        url: "/app.py/test",
+        url: "/test",
         async: false,
         data: { mydata: 0}
     });
 
     return jqXHR.responseText;
 }
+
+
 
 
 
