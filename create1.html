@@ -5,6 +5,21 @@
     <title>Title</title>
 </head>
 <body>
-dummy page for group id and admin password creation
+Enter a unique group identifier below:
+<input type = "text" id = "groupID" value = "group ID" />
+<button onclick="checkAvail()">check ID availability</button>
+<div id = "EnterValueError" style="display: none;">
+    <font style="color:red;">
+        Please enter a value for group identifier.
+    </font>
+</div>
+
+<div id = "IDTakenError" style="display: none;">
+    <font style="color:red">
+        This Group ID is already in use. Please enter another.
+    </font>
+</div>
+
+
 </body>
 </html>
