@@ -11,9 +11,17 @@ function checkAvail() {
     }
 
     // at this point, call a server side function to check availability
-
-
-
-
-
 }
+function checkPython() {
+    var jqXHR = $.ajax({
+        type: "POST",
+        url: "/test",
+        async: false,
+        data: { mydata: 0}
+    });
+
+    return jqXHR.responseText;
+}
+
+
+
